@@ -7,5 +7,5 @@ RUN apt-get update && \
     wget --no-verbose -P $HOME/.install4j8/jres "https://download.ej-technologies.com/bundles/java9/windows-amd64-11.0.3.tar.gz" && \
     wget --no-verbose -P $HOME/.install4j8/jres "https://download.ej-technologies.com/bundles/java9/macosx-amd64-11.0.3.tar.gz" && \
     wget --no-verbose -P $HOME/.install4j8/jres "https://otter-build-nightly.s3.amazonaws.com/linux-amd64-11.0.4.tar.gz"
-ENV ORG_GRADLE_PROJECT_gradlewInstall4jDirectory=/install4j/install4j8.0.4
+ENV ORG_GRADLE_PROJECT_gradlewInstall4jDirectory=/install4j/install4j9.0.2
 WORKDIR /repo
