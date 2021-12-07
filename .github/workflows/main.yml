@@ -39,4 +39,4 @@ jobs:
         
       - name: Push image
         run: |
-          docker push -a wycliffeassociates/doc
+          docker push -a wycliffeassociates/install4j-docker
