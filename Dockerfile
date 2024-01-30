@@ -1,4 +1,4 @@
-FROM gradle:5.6.2-jdk11
+FROM gradle:5.6.2-jdk17
 WORKDIR /install4j
 RUN apt-get update && \
     apt-get install -y wget xvfb && \
