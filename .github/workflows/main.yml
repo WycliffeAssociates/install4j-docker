@@ -1,13 +1,6 @@
 name: Docker
 
-on:
-  push:
-    branches:
-      - default
-  pull_request:
-    branches:
-      - default
-  workflow_dispatch:
+on: [push, pull_request, workflow_dispatch]
 
 jobs:
   #test building image for PR without push
@@ -25,7 +18,7 @@ jobs:
   #build and push image
   push:
     runs-on: ubuntu-20.04
-    if: github.event_name == 'push'
+    if: github.event_name == 'push' || github.event_name == 'workflow_dispatch'
     needs: [test]
 
     steps:
