@@ -1,6 +1,13 @@
 name: Docker
 
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - default
+  pull_request:
+    branches:
+      - default
+  workflow_dispatch:
 
 jobs:
   #test building image for PR without push
